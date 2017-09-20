@@ -8,7 +8,7 @@
     "test": "mocha --compilers js:babel-core/register --recursive",
     "test:watch": "npm test -- --watch",
     "lint": "eslint . ./",
-    "postinstall": "npm run lint && npm run build",
+    "postinstall": "npm install && npm run lint && npm run build",
     "prepublish": "npm run lint && npm run build"
   },
   "repository": {
